@@ -32,6 +32,7 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         animator = GetComponent<Animator>();
         characterController = GetComponent<CharacterController>();
         originalStepOffset = characterController.stepOffset;
@@ -126,7 +127,16 @@ public class PlayerMovement : MonoBehaviour
 
             characterController.Move(velocity * Time.deltaTime);
         }
-    }
+
+
+
+
+
+
+
+
+
+    }//end update
 
     private void OnAnimatorMove()
     {
@@ -137,7 +147,15 @@ public class PlayerMovement : MonoBehaviour
 
             characterController.Move(velocity);
         }
-    }
+
+
+
+
+
+
+
+
+    }//end animatorMove 
 
     private void OnApplicationFocus(bool focus)
     {

@@ -10,7 +10,7 @@ namespace HB
 {
     public class DamagePlayer : MonoBehaviour
     {
-        public int damage = 25;
+        public int damage = 10;
         //when player enters trigger event is triggered 
         private void OnTriggerEnter(Collider other)
         {
@@ -20,6 +20,7 @@ namespace HB
             {
                 //check if object that enters collider has a player stats script, then call TakeDamage on playerStats script, inflict 25 damage to player health 
                 playerStats.TakeDamage(damage);
+                playerStats.ReactionAnimator();
             }
         }//end OnTriggerEnter 
 
