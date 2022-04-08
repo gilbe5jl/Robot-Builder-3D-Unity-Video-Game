@@ -20,7 +20,7 @@ namespace HB
             {
                 //check if object that enters collider has a player stats script, then call TakeDamage on playerStats script, inflict 25 damage to player health 
                 playerStats.TakeDamage(damage);
-                playerStats.ReactionAnimator();
+                //playerStats.ReactionAnimator(true);
             }
         }//end OnTriggerEnter 
 

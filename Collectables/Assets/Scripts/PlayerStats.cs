@@ -41,18 +41,34 @@ public class PlayerStats : MonoBehaviour
             barOfHealth.SetCurrentHealth(currentHealth);//after player receives damage current health changes passing current health onto healthBar updating it 
             
         }
-        public void ReactionAnimator()
+        public void ReactionAnimator(bool react)
         {
-            if (currentHealth != maxHealth) {
+          
 
-                animator.SetBool("IsReacting", true);
+                animator.SetBool("IsReacting", react);
+           
+
+            
+        }
+
+
+        public void HealPlayer(int healAmt)
+        {
+            currentHealth = currentHealth + healAmt;
+            barOfHealth.SetCurrentHealth(currentHealth);
+        }
+
+        void Update()
+        {
+            if(currentHealth <= 5)
+            {
+                animator.SetBool("IsDeath", true);
+
             }
             else
             {
-                animator.SetBool("IsReacting", false);
+                animator.SetBool("IsDeath", false);
             }
-
-            
         }
 }//end class
 
