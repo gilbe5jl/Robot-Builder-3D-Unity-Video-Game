@@ -3,4 +3,5 @@ Repository for Senior Design CPS498
 <blockquote class="imgur-embed-pub" lang="en" data-id="a/n8oVIa2" data-context="false" ><a href="//imgur.com/a/n8oVIa2"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
 https://imgur.com/a/n8oVIa2
-![My Remote Image](https://imgur.com/a/n8oVIa2)
+
+[![Watch the video](https://imgur.com/a/n8oVIa2)
